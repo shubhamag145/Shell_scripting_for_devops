@@ -2,33 +2,33 @@
 
 << usage
 
-./function.sh hello
-
+functions.sh hello.txt
 inside function call
 
 install_package docker.io
 
 usage
 
-
-echo "$1 is the main argument passed to the script"
+echo "$1 is the main argument passed to the scrript"
 
 haldi() {
-
-	echo "haldi lagao"
-	echo "pani me daal do"
-
+echo "haldi lagao"
+echo "paani me daal do"
 }
+
+#prakhar call
+#haldi
+
+#kumar call
+#haldi
 
 # function define
 
 install_package() {
 
-	echo "$1 is the local argument passed to function"
+	echo "$1 is the local argument passed in function install_package"
+sudo apt-get install $1 -y
 
-sudo apt-get install $1
 }
 
-
-install_package docker.io # function call
-
+install_package docker.io # function called
